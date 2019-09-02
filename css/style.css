@@ -40,6 +40,10 @@ a:focus {
   text-decoration: none;
   color: #1d9b6c;
 }
+.no-container {
+        margin-left: 0 !important;
+        margin-right: 0 !important; 
+}
 .light {
   font-weight: 400;
 }
