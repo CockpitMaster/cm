@@ -651,14 +651,14 @@ body {
 
 .contain-filler{
   background-color: #f3f3f3;
-  height: 420px;
   text-align: justify;
 }
 
 .filler-text{
-  padding: 100px;
+  margin: auto;
 }
-
+.flex-filler{
+}
 
 /*Hover Box*/
 
@@ -1254,12 +1254,21 @@ nav {
   }
 }
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 766px) {
   /*Main*/
   .intro .intro-body .brand-heading{
     font-size: 36px;
   }
-
+  #filler p {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  #filler .button {
+    margin-left: 86px;
+  }
+  .filler-text-container{
+    margin: 60px 0;
+  }
   .intro-contact{
     width: 100%;
   }
@@ -1353,4 +1362,19 @@ nav {
 }
 .slick-dots{
   bottom: 25px!important;
+}
+
+
+
+
+@media only screen and (min-width: 1024px) {
+  .contain-filler{
+    display: flex;
+  }
+  .flex-filler{
+    flex: 1;
+  }
+  .filler-text-container{
+    margin: 0 50px;
+  }
 }
