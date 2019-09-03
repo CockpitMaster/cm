@@ -61,9 +61,7 @@ a:focus {
 }
 .navbar-custom .navbar-toggle {
   color: #2cbb40;
-  background-color: rgba(255, 255, 255, 0.2);
-  font-size: 12px;
-  border: 1px solid #2cbb40;
+  font-size: 21px;
 }
 .navbar-custom .navbar-toggle:focus,
 .navbar-custom .navbar-toggle:active {
@@ -1294,8 +1292,20 @@ nav {
   .navbar a{
     color: #7b7b7b!important;
   }
-
-
+  .logo-c{
+    display: block!important;
+    margin-left: 20px;
+  }
+  .logo{
+    display: none!important;
+  }
+  .contact-logo-c{
+    display: block!important;
+    margin-left: 20px;
+  }
+  .navbar-toggle{
+    margin-left: 8px;
+  }
   /*About*/
   .about-two .col-md-6 {
     margin: 0;
@@ -1315,6 +1325,17 @@ nav {
   }
   .about-one-img{
     margin: 60px 0 0 0;
+  }
+  .intro-contact{
+    margin-top: 66px;
+  }
+  nav .navbar-nav li:focus, nav .navbar-nav li:active, nav .navbar-nav li:hover{
+    background-color: #eee;
+  }
+  footer .nav > li > a:hover, footer .nav > li > a:focus, footer .nav > li > a:active{
+    text-decoration: none;
+    background-color: #000;
+    color: #1e792b;
   }
 } 
 
