@@ -882,7 +882,7 @@ nav {
 
 .slick-prev:before,
 .slick-next:before {
-  color: #2cbc41!important;
+  color: #fff!important;
 }
 
 .ey{
@@ -1318,4 +1318,15 @@ nav {
   }
 } 
 
-
+.slick-prev, .slick-next{
+  z-index: 1!important;
+}
+.slick-prev{
+  left: 25px!important;
+}
+.slick-next{
+  right: 25px!important;
+}
+.slick-dots{
+  bottom: 25px!important;
+}
