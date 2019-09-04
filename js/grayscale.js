@@ -41,9 +41,6 @@ $(document).ready(function(){
 });
 
 
-
-
-
 $(document).ready(function(){
 
     var img = new Image();
@@ -278,25 +275,15 @@ $('a[href*="#"]')
     }
   });
 
-// jQuery to collapse the navbar on scroll
-$(document).ready(function () {
-    
-    'use strict';
-
-    var c, currentScrollTop = 0,
-    navbar = $('nav');
-
-    $(window).scroll(function () {
-        var a = $(window).scrollTop();
-        var b = navbar.height();
-
-        currentScrollTop = a;
-
-        if (c < currentScrollTop && a > b + b) {
-            navbar.addClass("scrollUp");
-        } else if (c > currentScrollTop && !(a <= b)) {
-            navbar.removeClass("scrollUp");
-        }
-        c = currentScrollTop;
-    });
-});
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+    if(window.pageYOffset > 100){
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-100px";
+      }
+      prevScrollpos = currentScrollPos;
+    } 
+}
