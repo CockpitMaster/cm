@@ -211,7 +211,7 @@ a:focus {
   }
 }
 .content-section {
-  padding: 180px 0;
+  padding: 150px 0;
 }
 .newsletter-section {
   color: white;
@@ -505,7 +505,10 @@ body {
 .red{
   color: red;
 }
-
+.intro-promos{
+  background-image: url(../img/bg-p.jpg)!important;
+  margin-bottom: 130px;
+}
 /*Footer*/
 
 .footer-hr{
@@ -975,7 +978,7 @@ nav {
 
 .intro-contact-maps {
   margin-top: -100px;
-  margin-bottom: 160px;
+  margin-bottom: 150px;
   display: table;
   width: 90%;
 }
@@ -1202,7 +1205,56 @@ nav {
     font-size: 1.3rem;
     line-height: 4rem;
 }
-
+slick-prev, .slick-next{
+  z-index: 1!important;
+}
+.slick-prev{
+  left: 25px!important;
+}
+.slick-next{
+  right: 25px!important;
+}
+.slick-dots{
+  bottom: 25px!important;
+}
+.slick-dotted.slick-slider {
+  margin-bottom: 0px!important;
+}
+.about-two{
+    overflow: auto;
+    margin: 150px 0;
+}
+.about-two .col-md-6{
+    margin: 0;
+    padding: 0 15px 0 0;
+}
+.about-two img{
+    height: auto;
+}
+.about-description{
+    padding: 40px 30px;
+    text-align: left;
+}
+.about-description .intro-font-small{
+    color: #5f5f5f;
+}
+.about-description p{
+    font-size: 1.3rem;
+    line-height: 4rem;
+}
+.about-description h2, .about-description h4, .about-description p{
+    margin-left: 39px;
+    margin-right: 39px;
+}
+.about-info-last{
+    background-color: white;
+    color: #5f5f5f;
+    padding: 40px 30px;
+}
+.about-info-last p{
+    font-size: 1.3rem;
+    line-height: 4rem;
+}
 @media (max-width: 1199px) {
   ul.banner-social-buttons {
     margin-top: 15px;
@@ -1248,7 +1300,7 @@ nav {
 @media only screen and (max-width: 766px) {
   /*Main*/
   .intro .intro-body .brand-heading{
-    font-size: 36px;
+    font-size: 46px;
   }
   #filler p {
     margin-left: 85px;
@@ -1265,6 +1317,16 @@ nav {
   }
   .intro-contact-maps{
     width: 100%;
+  }
+  .content-section {
+    padding: 100px 0;
+  }
+  .about-one .content-section{
+    padding-top: 80px;
+  }
+  #links h1{
+    margin-left: 15px;
+    margin-right: 15px;
   }
   footer .row {
     margin-right: 15px;
@@ -1329,8 +1391,31 @@ nav {
   .about-one-img .col-md-12{
     padding: 0;
   }
+  .about-two{
+    margin: 100px 0;
+  }
+  .about-description h2, .about-description p {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .about-description p:last-child{
+    margin-bottom: 0px; 
+  }
+  .about-description{
+    padding-bottom: 0;
+    padding-top: 60px;
+  }
+  .about-contact{
+    margin-top: 100px!important; 
+  }
   .intro-contact{
     margin-top: 66px;
+  }
+  .intro-contact-maps {
+    margin-bottom: 100px;
+  }
+  .second-location {
+    margin: 60px 0px 100px 0px;
   }
   nav .navbar-nav li:focus, nav .navbar-nav li:active, nav .navbar-nav li:hover{
     background-color: #eee;
@@ -1340,22 +1425,17 @@ nav {
     background-color: #000;
     color: #1e792b;
   }
+  .contact-info{
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+  .promotions .row{
+    margin: 60px 0px;
+  }
+  .intro-promos{
+  margin-bottom: 80px;
+  }
 } 
-
-.slick-prev, .slick-next{
-  z-index: 1!important;
-}
-.slick-prev{
-  left: 25px!important;
-}
-.slick-next{
-  right: 25px!important;
-}
-.slick-dots{
-  bottom: 25px!important;
-}
-
-
 
 
 @media only screen and (min-width: 1024px) {
