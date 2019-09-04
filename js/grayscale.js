@@ -1,95 +1,101 @@
-// jQuery to collapse the navbar on scroll
-$(document).ready(function () {
-  
-    $('.home-carousel').slick({
-      dots: true,
-      infinite: false,
-      speed: 300,
-      slidesToShow: 4,
-      slidesToScroll: 4,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
+$(document).ready(function(){
+    // Closes the Responsive Menu on Menu Item Click
+    $(document).click(function(e) {
+        if (!$(e.target).is('.navbar-main-collapse')){
+            $(".navbar-collapse").collapse('hide');
         }
+    });
+
+    //slick carousel
+    $('.home-carousel').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+            }
+            }, {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+            }, {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+       }]
         // You can unslick at a given breakpoint now by adding:
         // settings: "unslick"
         // instead of a settings object
-      ]
     });
-
-  'use strict';
-  
-   var c, currentScrollTop = 0,
-       navbar = $('nav');
-
-   $(window).scroll(function () {
-      var a = $(window).scrollTop();
-      var b = navbar.height();
-     
-      currentScrollTop = a;
-     
-      if (c < currentScrollTop && a > b + b) {
-        navbar.addClass("scrollUp");
-      } else if (c > currentScrollTop && !(a <= b)) {
-        navbar.removeClass("scrollUp");
-      }
-      c = currentScrollTop;
-  });
-  
 });
+
+// jQuery to collapse the navbar on scroll
+$(document).ready(function () {
+    
+    'use strict';
+
+    var c, currentScrollTop = 0,
+    navbar = $('nav');
+
+    $(window).scroll(function () {
+        var a = $(window).scrollTop();
+        var b = navbar.height();
+
+        currentScrollTop = a;
+
+        if (c < currentScrollTop && a > b + b) {
+            navbar.addClass("scrollUp");
+        } else if (c > currentScrollTop && !(a <= b)) {
+            navbar.removeClass("scrollUp");
+        }
+        c = currentScrollTop;
+    });
+});
+
+
+
 
 $(document).ready(function(){
 
-
-var img = new Image();
-img.src = "../img/intro-bg.jpg";
-img.onload = function( ) {
-    $('h1.brand-heading').css('display', 'none');
-    $('h1.brand-heading').fadeIn(1000);
-}
-/*! Fades in intro on load */
-
-$(".navbar-custom a.contact-nav").addClass("font-gray");
-
-    function collapseNavbar() {
-    if ($(".navbar").offset().top > 30) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
-        $(".navbar-custom a").addClass("font-gray");
-        $(".logo").css("display", "none");
-        $(".logo-c").css("display", "block");
-
-    } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-        $(".navbar-custom a").removeClass("font-gray");
-        $(".navbar-custom a.contact-nav").addClass("font-gray");
-        $(".logo").css("display", "block");
-        $(".logo-c").css("display", "none");
+    var img = new Image();
+    img.src = "../img/intro-bg.jpg";
+    img.onload = function( ) {
+        $('h1.brand-heading').css('display', 'none');
+        $('h1.brand-heading').fadeIn(1000);
     }
 
-}
+    $(".navbar-custom a.contact-nav").addClass("font-gray");
 
-$(window).scroll(collapseNavbar);
-$(document).ready(collapseNavbar);
+    function collapseNavbar() {
+        if ($(".navbar").offset().top > 30) {
+            $(".navbar-fixed-top").addClass("top-nav-collapse");
+            $(".navbar-custom a").addClass("font-gray");
+            $(".logo").css("display", "none");
+            $(".logo-c").css("display", "block");
+
+        } else {
+            $(".navbar-fixed-top").removeClass("top-nav-collapse");
+            $(".navbar-custom a").removeClass("font-gray");
+            $(".navbar-custom a.contact-nav").addClass("font-gray");
+            $(".logo").css("display", "block");
+            $(".logo-c").css("display", "none");
+        }
+
+    }
+
+    $(window).scroll(collapseNavbar);
+    $(document).ready(collapseNavbar);
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
@@ -100,11 +106,6 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
-});
-
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-    $(".navbar-collapse").collapse('hide');
 });
 
 // Google Maps Scripts
