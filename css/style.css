@@ -884,6 +884,7 @@ nav {
 .slick-prev:before,
 .slick-next:before {
   color: #fff!important;
+  z-index: 1;
 }
 
 .ey{
@@ -939,7 +940,8 @@ nav {
 .about-one{
     /*height: 100%;*/
     background-color: white;
-}
+    outline: none;
+  }
 
 .about-three{
     background-color: #f3f3f3;
@@ -1210,6 +1212,7 @@ slick-prev, .slick-next{
 }
 .slick-prev{
   left: 25px!important;
+  z-index: 1;
 }
 .slick-next{
   right: 25px!important;
