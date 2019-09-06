@@ -116,7 +116,7 @@ a:focus {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background: url(../img/intro-bg.png);
+  background: url(../img/intro-bg.jpg);
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -913,7 +913,7 @@ nav {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background: url(../img/intro-bg1.png);
+    background: url(../img/intro-bg1.jpg);
     background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
