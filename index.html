@@ -31,7 +31,31 @@
     </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <style>
+    .loading-overlay{
+        text-align: center;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        z-index: 2000;
+    }
+    .loading-overlay .loading-content{
+        background-color: white;
+        position: fixed;
+    }
+    body{
+        overflow: hidden;
+    }
+    </style>
 
+    <div class="loading-overlay">
+        <div class="loading-content">
+            <div class="loading">LOADING...</div>
+        </div>
+    </div>
     <!-- Navigation -->
     <nav id="navbar" class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
@@ -409,7 +433,6 @@
             </div>
         </div>
     </footer>
-
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.js"></script>
 
@@ -424,6 +447,16 @@
 
     <!-- Theme JavaScript -->
     <script src="js/grayscale.js"></script>
+
+    <script>
+    $('.navbar-fixed-top').css("position", "inherit", "important")
+    $(window).load(function(){
+   // PAGE IS FULLY LOADED  
+   // FADE OUT YOUR OVERLAYING DIV
+        $('.loading-overlay').fadeOut("slow");
+        $('body').css("overflow", "auto");
+    });
+    </script>
 
 </body>
 
