@@ -449,12 +449,13 @@
     <script src="js/grayscale.js"></script>
 
     <script>
-    $('.navbar-fixed-top').css("position", "inherit", "important")
+    $('.navbar-fixed-top').css("position", "inherit", "important");
     $(window).load(function(){
    // PAGE IS FULLY LOADED  
    // FADE OUT YOUR OVERLAYING DIV
         $('.loading-overlay').fadeOut("slow");
         $('body').css("overflow", "auto");
+        $('.navbar-fixed-top').css("position", "fixed");
     });
     </script>
 
