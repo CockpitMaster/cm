@@ -58,6 +58,7 @@ $(document).ready(function(){
             $(".navbar-custom a").addClass("font-gray");
             $(".logo").css("display", "none");
             $(".logo-c").css("display", "block");
+            $(".top").fadeIn("swing");
 
         } else {
             $(".navbar-fixed-top").removeClass("top-nav-collapse");
@@ -65,6 +66,7 @@ $(document).ready(function(){
             $(".navbar-custom a.contact-nav").addClass("font-gray");
             $(".logo").css("display", "block");
             $(".logo-c").css("display", "none");
+            $(".top").fadeOut("swing");
         }
 
     }

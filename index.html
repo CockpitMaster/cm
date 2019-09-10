@@ -31,31 +31,9 @@
     </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-    <style>
-    .loading-overlay{
-        text-align: center;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-        z-index: 2000;
-    }
-    .loading-overlay .loading-content{
-        background-color: white;
-        position: fixed;
-    }
-    body{
-        overflow: hidden;
-    }
-    </style>
-
-    <div class="loading-overlay">
-        <div class="loading-content">
-            <div class="loading">LOADING...</div>
-        </div>
-    </div>
+    <a href="#page-top" class="top">
+        ^
+    </a>
     <!-- Navigation -->
     <nav id="navbar" class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
@@ -261,126 +239,8 @@
                 </div>
 
             </div>
-            <!-- <div class="contain-img col-md-6">
-                    <div class="">
-                        <div class="hvrbox hvrbox_background links-big" style="background-image: url(img/service-1.jpg);">
-                            <div class="hvrbox-layer_top">
-                                <div class="hvrbox-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-
-            <div class="contain-img col-md-6">
-                <div class="">
-                    <div class="hvrbox hvrbox_background links-small" style="background-image: url(img/service-2.jpg);">
-                        <div class="hvrbox-layer_top">
-                            <div class="hvrbox-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="">
-                    <div class="hvrbox hvrbox_background links-small" style="background-image: url(img/service-3.jpg);">
-                        <div class="hvrbox-layer_top">
-                            <div class="hvrbox-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor ligula porttitor, lacinia sapien non.</div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            
         </div>
     </section>
-
-
-
-
-    <!-- Newsletter Section -->
-<!--     <section id="newsletter" class="text-center">
-        <div class="newsletter-section">
-            <div class="container">
-                <div class="newsletter-bgcolor col-lg-10 col-lg-offset-1">
-                    <h2>Don't miss any of our deals!</h2>
-                    <p>Sign up to our newsletter now to stay updated with the best deals and promos! </p>
-
-                    <div class="form-group">
-                        <div class="form-group col-md-4 ">
-                            <input type="text" placeholder="Email Address" class="form-control">
-                        </div>
-                        <div class="form-group col-md-4 ">
-                            <input type="text" placeholder="Cellphone no." class="form-control">
-                        </div>
-                        <div class="form-group col-md-4 ">
-                              <a href="" class="btn btn-lg unique-btn">Email Me Promos!</a>
-                        </div>
-                  </div>
-
-
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Contact Section -->
-<!--     <div class="footer-all">
-        <section id="contact" class="container content-section text-center">
-            <div class="row">
-                <div class="col-md-3 text-left">
-                    <ul>
-                        <li><strong>LINKS</strong></li>
-                        <li>HOME</li>
-                        <li>ABOUT</li>
-                        <li>SERVICES</li>
-                        <li>PROMOS</li>
-                        <li>CONTACTS</li>
-                    </ul>
-                </div>
-                <div class="col-md-3 text-left">
-                    
-                </div>
-                <div class="col-md-3 text-justify">
-                    <hr class="aesthetic-hr"/>
-                    <h2 class="text-left">Don't miss any of our deals!</h2>
-                    <p class="font-medium">Sign up to our newsletter now to stay updated with the best deals and promos! </p>
-
-                    <div class="form-group">
-                        <div class="">
-                            <input type="text" placeholder="Email Address" class="form-control">
-                        </div>
-                        <div class="">
-                            <input type="text" placeholder="Cellphone no." class="form-control">
-                        </div>
-                        <div class="">
-                              <a href="" class="btn btn-lg unique-btn">Email Me Promos!</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <hr class="aesthetic-hr"/>
-                    <div class="text-justify font-small">
-                        <h2 class="text-left">Follow us on social media!</h2>
-                        <p class="font-medium">Like us on facebook and follow us on instagram to be able to stay updated with Clara International Skin and Body Products and Services! </p>
-
-                        <ul class="list-inline banner-social-buttons">
-                            <li>
-                                <a href="https://www.facebook.com/ClaraSkinandBodyCentre/" class="btn btn-default fb btn-lg"><i class="fa fa-facebook fa-fw"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn btn-default ig btn-lg"><i class="fa fa-instagram fa-fw"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <footer>
-            <div class="container text-center font-small">
-                <p class="font-medium">&copy; 2012-2018 Clara International Skin and Body Philippines. All Rights Reserved.</p>
-            </div>
-        </footer>
-    </div>
- -->   
 <footer>
         <div class="row no-container">
             <div class="col-md-5 col-lg-offset-1 footer-space">
@@ -433,6 +293,7 @@
             </div>
         </div>
     </footer>
+
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.js"></script>
 
@@ -447,17 +308,6 @@
 
     <!-- Theme JavaScript -->
     <script src="js/grayscale.js"></script>
-
-    <script>
-    $('.navbar-fixed-top').css("position", "inherit", "important");
-    $(window).load(function(){
-   // PAGE IS FULLY LOADED  
-   // FADE OUT YOUR OVERLAYING DIV
-        $('.loading-overlay').fadeOut("slow");
-        $('body').css("overflow", "auto");
-        $('.navbar-fixed-top').css("position", "fixed");
-    });
-    </script>
 
 </body>
 
